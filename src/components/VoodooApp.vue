@@ -1,7 +1,7 @@
 <script lang="ts">
 import VoodooPostsList from './VoodooPostsList.vue'
 import VoodooAppSearch from './VoodooAppSearch.vue'
-import { Post } from '../types/types'
+import type { Post, User } from '../types/types'
 
 const API_URL = 'https://jsonplaceholder.typicode.com/'
 const POSTS_ENDPOINT = 'posts/'
@@ -17,7 +17,7 @@ export default {
         return {
             searchQuery: '',
             posts: [] as Post[],
-            users: [] as any[] // Adjust type as necessary
+            users: [] as User[]
         }
     },
 
